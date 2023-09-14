@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Online Shopping Survey</title>
+</head>
+
+<body>
+    <header>
+        <h1>Online Shopping Survey JsTehtava 3</h1>
+    </header>
+    <form action="#" method="post" id="surveyForm">
+        <section>
+            <h2>1. Personal Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </section>
+
+        <section>
+            <h2>2. Shopping Habits</h2>
+            <p>How often do you shop online?</p>
+            <label>
+                <input type="radio" name="shopping_frequency" value="daily"> Daily
+            </label>
+            <label>
+                <input type="radio" name="shopping_frequency" value="weekly"> Weekly
+            </label>
+            <label>
+                <input type="radio" name="shopping_frequency" value="monthly"> Monthly
+            </label>
+            <label>
+                <input type="radio" name="shopping_frequency" value="rarely"> Rarely
+            </label>
+        </section>
+
+        <section>
+            <h2>3. Product Categories</h2>
+            <p>Which product categories do you prefer to shop for online? (Select all that apply)</p>
+            <label>
+                <input type="checkbox" name="product_category" value="electronics"> Electronics
+            </label>
+            <label>
+                <input type="checkbox" name="product_category" value="clothing"> Clothing
+            </label>
+            <label>
+                <input type="checkbox" name="product_category" value="books"> Books
+            </label>
+            <label>
+                <input type="checkbox" name="product_category" value="home_decor"> Home Decor
+            </label>
+        </section>
+
+        <section>
+            <h2>4. Comments</h2>
+            <label for="comments">Do you have any additional comments or suggestions?</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+        </section>
+
+        <button type="submit">Submit</button>
+    </form>
+    <script src="survey.js"></script>
+</body>
+
+</html>
